@@ -23,5 +23,18 @@ tasks.forEach((task, index) => {
   taskGrid.appendChild(card);
 });
 
-const formattedDate = new Intl.DateTimeFormat("sv-SE", { weekday: "long", day: "numeric", month: "long" }).format(new Date());
-document.querySelector("#todayLabel").textContent = `Klass 6F · ${formattedDate}`;
+function getIsoWeek(date) {
+  const utcDate = new Date(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()));
+  const weekday = utcDate.getUTCDay() || 7;
+  utcDate.setUTCDate(utcDate.getUTCDate() + 4 - weekday);
+  const yearStart = new Date(Date.UTC(utcDate.getUTCFullYear(), 0, 1));
+  return Math.ceil((((utcDate - yearStart) / 86400000) + 1) / 7);
+}
+
+const today = new Date();
+const formattedDate = new Intl.DateTimeFormat("sv-SE", {
+  weekday: "long",
+  day: "numeric",
+  month: "long"
+}).format(today);
+document.querySelector("#todayLabel").textContent = `Klass 6F · Vecka ${getIsoWeek(today)} · ${formattedDate}`;
