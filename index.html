@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173b35">
+  <meta name="description" content="En tydlig och mobilvänlig översikt över läxor och viktig information för klass 6F.">
+  <title>6F Läxor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="6F Läxor, startsida">
+      <span class="brand-mark">6F</span>
+      <span><strong>Läxkollen</strong><small>Veckans viktigaste</small></span>
+    </a>
+    <a class="source-link" href="https://docs.google.com/document/u/0/d/1NHyJTY1pQHA16SGSMf1Q8Q-jceoCgZr1BLQIEaRB2s4/mobilebasic?pli=1" target="_blank" rel="noopener">Originalplanering ↗</a>
+  </header>
+
+  <main id="top">
+    <section class="intro">
+      <p class="eyebrow" id="todayLabel">Klass 6F</p>
+      <h1>Vad behöver jag göra?</h1>
+      <p>En lugn överblick över det viktigaste nu och det som kommer senare.</p>
+    </section>
+
+    <section class="status-card" aria-labelledby="next-heading">
+      <span class="status-icon">✓</span>
+      <div>
+        <p class="eyebrow">Till nästa skoldag</p>
+        <h2 id="next-heading">Ingen särskild läxa till imorgon</h2>
+        <p>Passa på att börja lugnt med kommande uppgifter.</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="focus-heading">
+      <div class="section-heading">
+        <div><p class="eyebrow">Bra att göra idag</p><h2 id="focus-heading">Dagens fokus</h2></div>
+        <span class="time-pill">ca 30–40 min</span>
+      </div>
+      <div class="task-grid" id="taskGrid"></div>
+    </section>
+
+    <section class="two-column">
+      <article class="panel">
+        <p class="eyebrow">Kommande</p>
+        <h2>Datum att hålla koll på</h2>
+        <ol class="timeline">
+          <li><time>10–11 sep</time><div><strong>Sexans dagar</strong><span>08.30–14.30. Flera vanliga lektioner utgår.</span></div></li>
+          <li><time>15 sep</time><div><strong>Matematikavstämning</strong><span>Uppgifter som liknar repetitionshäftet.</span></div></li>
+          <li><time>18 sep</time><div><strong>Engelska glosor</strong><span>Words to describe English.</span></div></li>
+          <li><time>Vecka 38</time><div><strong>Hem- och konsumentkunskap</strong><span>Omelettfilm och samtal om att spara och betala.</span></div></li>
+        </ol>
+      </article>
+
+      <article class="panel note-panel">
+        <p class="eyebrow">Viktigt</p>
+        <h2>Att komma ihåg</h2>
+        <ul class="notes">
+          <li><span>🧭</span><div><strong>Onsdag</strong><p>Orienteringsteori inomhus i idrottshallen.</p></div></li>
+          <li><span>🇪🇸</span><div><strong>Spanska</strong><p>Nya ord delas ut. Missat material finns i Classroom, kod <b>zhqrvdmg</b>.</p></div></li>
+        </ul>
+      </article>
+    </section>
+
+    <p class="updated">Senast sammanställd 7 september 2026 · Kontrollera alltid lärarnas originalplanering vid osäkerhet.</p>
+  </main>
+
+  <script src="homework.js"></script>
+</body>
+</html>
