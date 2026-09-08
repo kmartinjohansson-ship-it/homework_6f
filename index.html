@@ -14,12 +14,23 @@
       <span class="brand-mark">6F</span>
       <span><strong>Läxkollen</strong><small>Veckans viktigaste</small></span>
     </a>
-    <a class="source-link" href="https://docs.google.com/document/u/0/d/1NHyJTY1pQHA16SGSMf1Q8Q-jceoCgZr1BLQIEaRB2s4/mobilebasic?pli=1" target="_blank" rel="noopener">Originalplanering ↗</a>
+    <div class="header-actions">
+      <label class="language-picker" for="languageSelect">
+        <span>Mitt språk</span>
+        <select id="languageSelect" aria-label="Välj modernt språk">
+          <option value="spanska">Spanska</option>
+          <option value="franska">Franska</option>
+          <option value="tyska">Tyska</option>
+        </select>
+      </label>
+      <a class="source-link" href="https://docs.google.com/document/u/0/d/1NHyJTY1pQHA16SGSMf1Q8Q-jceoCgZr1BLQIEaRB2s4/mobilebasic?pli=1" target="_blank" rel="noopener">Originalplanering ↗</a>
+    </div>
   </header>
 
   <main id="top">
     <section class="intro">
       <p class="eyebrow" id="todayLabel">Klass 6F</p>
+      <p class="last-updated">Senast uppdaterad 8 september 2026</p>
       <h1>Vad behöver jag göra?</h1>
       <p>En lugn överblick över det viktigaste nu och det som kommer senare.</p>
     </section>
@@ -58,12 +69,12 @@
         <h2>Att komma ihåg</h2>
         <ul class="notes">
           <li><span>🧭</span><div><strong>Onsdag</strong><p>Orienteringsteori inomhus i idrottshallen.</p></div></li>
-          <li><span>🇪🇸</span><div><strong>Spanska</strong><p>Nya ord delas ut. Missat material finns i Classroom, kod <b>zhqrvdmg</b>.</p></div></li>
+          <li id="languageNote"></li>
         </ul>
       </article>
     </section>
 
-    <p class="updated">Senast sammanställd 7 september 2026 · Kontrollera alltid lärarnas originalplanering vid osäkerhet.</p>
+    <p class="updated">Kontrollera alltid lärarnas originalplanering vid osäkerhet.</p>
   </main>
 
   <script src="homework.js"></script>
